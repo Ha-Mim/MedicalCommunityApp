@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MedicalCommunity.DAO;
 using MedicalCommunityAutomation.DAL;
 
-namespace MedicalCommunity.DBGateway
+namespace MedicalCommunity.DLL
 {
     public class MedicineDBGateway:DbGateway
     {
@@ -41,10 +38,24 @@ namespace MedicalCommunity.DBGateway
         }
 
 
-
-        internal Medicine Find(int p)
+        public Medicine Find(int id)
         {
-            throw new NotImplementedException();
+            string query = "SELECT *FROM tbl_medicine where id="+id;
+            ASqlConnection.Open();
+            ASqlCommand = new SqlCommand(query, ASqlConnection);
+            ASqlDataReader = ASqlCommand.ExecuteReader();
+            Medicine aMedicine = new Medicine();
+            while (ASqlDataReader.Read())
+            {
+                
+                aMedicine.Id = Convert.ToInt32(ASqlDataReader["id"]);
+                aMedicine.Name = ASqlDataReader["Name"].ToString();
+                aMedicine.MgMl = ASqlDataReader["mg_ml"].ToString();
+                
+            }
+            ASqlDataReader.Close();
+            ASqlConnection.Close();
+            return aMedicine;
         }
     }
 }

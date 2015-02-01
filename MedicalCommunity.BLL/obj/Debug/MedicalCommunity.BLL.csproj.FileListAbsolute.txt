@@ -25,3 +25,12 @@ F:\New folder\MedicalCommunityApp\MedicalCommunity.BLL\bin\Debug\MedicalCommunit
 F:\New folder\MedicalCommunityApp\MedicalCommunity.BLL\obj\Debug\MedicalCommunity.BLL.csprojResolveAssemblyReference.cache
 F:\New folder\MedicalCommunityApp\MedicalCommunity.BLL\obj\Debug\MedicalCommunity.BLL.dll
 F:\New folder\MedicalCommunityApp\MedicalCommunity.BLL\obj\Debug\MedicalCommunity.BLL.pdb
+D:\asp.net\MedicalCommunityApp\MedicalCommunity.BLL\bin\Debug\MedicalCommunity.BLL.dll
+D:\asp.net\MedicalCommunityApp\MedicalCommunity.BLL\bin\Debug\MedicalCommunity.BLL.pdb
+D:\asp.net\MedicalCommunityApp\MedicalCommunity.BLL\bin\Debug\MedicalCommunity.DAO.dll
+D:\asp.net\MedicalCommunityApp\MedicalCommunity.BLL\bin\Debug\MedicalCommunity.DLL.dll
+D:\asp.net\MedicalCommunityApp\MedicalCommunity.BLL\bin\Debug\MedicalCommunity.DAO.pdb
+D:\asp.net\MedicalCommunityApp\MedicalCommunity.BLL\bin\Debug\MedicalCommunity.DLL.pdb
+D:\asp.net\MedicalCommunityApp\MedicalCommunity.BLL\obj\Debug\MedicalCommunity.BLL.csprojResolveAssemblyReference.cache
+D:\asp.net\MedicalCommunityApp\MedicalCommunity.BLL\obj\Debug\MedicalCommunity.BLL.dll
+D:\asp.net\MedicalCommunityApp\MedicalCommunity.BLL\obj\Debug\MedicalCommunity.BLL.pdb

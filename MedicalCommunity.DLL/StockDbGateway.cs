@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MedicalCommunity.DAO;
-using MedicalCommunity.DBGateway;
+using MedicalCommunity.DLL;
 using MedicalCommunityAutomation.DAO;
 
 namespace MedicalCommunityAutomation.DAL
