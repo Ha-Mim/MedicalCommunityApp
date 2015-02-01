@@ -5,3 +5,10 @@ F:\ASP.Net Project\MedicalCommunityWedApp\MedicalCommunity.DLL\bin\Debug\Medical
 F:\ASP.Net Project\MedicalCommunityWedApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DLL.csprojResolveAssemblyReference.cache
 F:\ASP.Net Project\MedicalCommunityWedApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DLL.dll
 F:\ASP.Net Project\MedicalCommunityWedApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DLL.pdb
+F:\MedicalCommunityApp\MedicalCommunity.DLL\bin\Debug\MedicalCommunity.DLL.dll
+F:\MedicalCommunityApp\MedicalCommunity.DLL\bin\Debug\MedicalCommunity.DLL.pdb
+F:\MedicalCommunityApp\MedicalCommunity.DLL\bin\Debug\MedicalCommunity.DAO.dll
+F:\MedicalCommunityApp\MedicalCommunity.DLL\bin\Debug\MedicalCommunity.DAO.pdb
+F:\MedicalCommunityApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DLL.csprojResolveAssemblyReference.cache
+F:\MedicalCommunityApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DLL.dll
+F:\MedicalCommunityApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DLL.pdb
