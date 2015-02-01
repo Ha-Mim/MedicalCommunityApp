@@ -57,10 +57,27 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HeadOffice\DiseaseSetUp.aspx" />
+    <Content Include="HeadOffice\NewCenterCreation.aspx" />
     <Content Include="HeadOffice\SetupMedicine.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HeadOffice\DiseaseSetUp.aspx.cs">
+      <DependentUpon>DiseaseSetUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HeadOffice\DiseaseSetUp.aspx.designer.cs">
+      <DependentUpon>DiseaseSetUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HeadOffice\NewCenterCreation.aspx.cs">
+      <DependentUpon>NewCenterCreation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HeadOffice\NewCenterCreation.aspx.designer.cs">
+      <DependentUpon>NewCenterCreation.aspx</DependentUpon>
+    </Compile>
     <Compile Include="HeadOffice\SetupMedicine.aspx.cs">
       <DependentUpon>SetupMedicine.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
