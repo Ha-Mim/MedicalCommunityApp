@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MedicalCommunity.DAO;
-using MedicalCommunity.DBGateway;
+using MedicalCommunity.DLL;
 
 namespace MedicalCommunity.BLL
 {

@@ -57,8 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Center\doctorEntry.aspx" />
     <Content Include="Center\HomePage.aspx" />
     <Content Include="Center\LoginInCenter.aspx" />
+    <Content Include="Center\stockReport.aspx" />
     <Content Include="HeadOffice\DiseaseSetUp.aspx" />
     <Content Include="HeadOffice\NewCenterCreation.aspx" />
     <Content Include="HeadOffice\SendMedicine.aspx" />
@@ -68,6 +70,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Center\doctorEntry.aspx.cs">
+      <DependentUpon>doctorEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Center\doctorEntry.aspx.designer.cs">
+      <DependentUpon>doctorEntry.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Center\HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -81,6 +90,13 @@
     </Compile>
     <Compile Include="Center\LoginInCenter.aspx.designer.cs">
       <DependentUpon>LoginInCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Center\stockReport.aspx.cs">
+      <DependentUpon>stockReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Center\stockReport.aspx.designer.cs">
+      <DependentUpon>stockReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="HeadOffice\DiseaseSetUp.aspx.cs">
       <DependentUpon>DiseaseSetUp.aspx</DependentUpon>

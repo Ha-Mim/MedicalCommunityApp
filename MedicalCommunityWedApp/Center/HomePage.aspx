@@ -12,11 +12,11 @@
     
         <asp:HyperLink ID="HyperLink1" runat="server">Patients Registration </asp:HyperLink>
         <br />
-        <asp:HyperLink ID="HyperLink2" runat="server">Doctor Entry</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="doctorEntry.aspx">Doctor Entry</asp:HyperLink>
         <br />
         <asp:HyperLink ID="HyperLink3" runat="server">Treatment Given</asp:HyperLink>
         <br />
-        <asp:HyperLink ID="HyperLink4" runat="server">Stock Report</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="stockReport.aspx">Stock Report</asp:HyperLink>
     
     </div>
     </form>
