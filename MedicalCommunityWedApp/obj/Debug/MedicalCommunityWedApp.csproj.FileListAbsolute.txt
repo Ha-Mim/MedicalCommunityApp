@@ -1,0 +1,11 @@
+F:\ASP.Net Project\MedicalCommunityWedApp\MedicalCommunityWedApp\obj\Debug\MedicalCommunityWedApp.csprojResolveAssemblyReference.cache
+F:\ASP.Net Project\MedicalCommunityWedApp\MedicalCommunityWedApp\bin\MedicalCommunityWedApp.dll
+F:\ASP.Net Project\MedicalCommunityWedApp\MedicalCommunityWedApp\bin\MedicalCommunityWedApp.pdb
+F:\ASP.Net Project\MedicalCommunityWedApp\MedicalCommunityWedApp\bin\MedicalCommunity.BLL.dll
+F:\ASP.Net Project\MedicalCommunityWedApp\MedicalCommunityWedApp\bin\MedicalCommunity.DAO.dll
+F:\ASP.Net Project\MedicalCommunityWedApp\MedicalCommunityWedApp\bin\MedicalCommunity.DLL.dll
+F:\ASP.Net Project\MedicalCommunityWedApp\MedicalCommunityWedApp\bin\MedicalCommunity.BLL.pdb
+F:\ASP.Net Project\MedicalCommunityWedApp\MedicalCommunityWedApp\bin\MedicalCommunity.DAO.pdb
+F:\ASP.Net Project\MedicalCommunityWedApp\MedicalCommunityWedApp\bin\MedicalCommunity.DLL.pdb
+F:\ASP.Net Project\MedicalCommunityWedApp\MedicalCommunityWedApp\obj\Debug\MedicalCommunityWedApp.dll
+F:\ASP.Net Project\MedicalCommunityWedApp\MedicalCommunityWedApp\obj\Debug\MedicalCommunityWedApp.pdb

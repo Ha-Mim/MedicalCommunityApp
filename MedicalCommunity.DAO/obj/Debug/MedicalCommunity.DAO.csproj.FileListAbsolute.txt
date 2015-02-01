@@ -1,0 +1,5 @@
+F:\ASP.Net Project\MedicalCommunityWedApp\MedicalCommunity.DAO\bin\Debug\MedicalCommunity.DAO.dll
+F:\ASP.Net Project\MedicalCommunityWedApp\MedicalCommunity.DAO\bin\Debug\MedicalCommunity.DAO.pdb
+F:\ASP.Net Project\MedicalCommunityWedApp\MedicalCommunity.DAO\obj\Debug\MedicalCommunity.DAO.csprojResolveAssemblyReference.cache
+F:\ASP.Net Project\MedicalCommunityWedApp\MedicalCommunity.DAO\obj\Debug\MedicalCommunity.DAO.dll
+F:\ASP.Net Project\MedicalCommunityWedApp\MedicalCommunity.DAO\obj\Debug\MedicalCommunity.DAO.pdb
