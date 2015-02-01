@@ -40,7 +40,9 @@ namespace MedicalCommunity.DBGateway
             return aMedicineList;
         }
 
-        public Medicine Find(int toInt32)
+
+
+        internal Medicine Find(int p)
         {
             throw new NotImplementedException();
         }

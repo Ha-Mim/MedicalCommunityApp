@@ -16,3 +16,12 @@ F:\MedicalCommunityApp\MedicalCommunity.BLL\bin\Debug\MedicalCommunity.DLL.pdb
 F:\MedicalCommunityApp\MedicalCommunity.BLL\obj\Debug\MedicalCommunity.BLL.csprojResolveAssemblyReference.cache
 F:\MedicalCommunityApp\MedicalCommunity.BLL\obj\Debug\MedicalCommunity.BLL.dll
 F:\MedicalCommunityApp\MedicalCommunity.BLL\obj\Debug\MedicalCommunity.BLL.pdb
+F:\New folder\MedicalCommunityApp\MedicalCommunity.BLL\bin\Debug\MedicalCommunity.BLL.dll
+F:\New folder\MedicalCommunityApp\MedicalCommunity.BLL\bin\Debug\MedicalCommunity.BLL.pdb
+F:\New folder\MedicalCommunityApp\MedicalCommunity.BLL\bin\Debug\MedicalCommunity.DAO.dll
+F:\New folder\MedicalCommunityApp\MedicalCommunity.BLL\bin\Debug\MedicalCommunity.DLL.dll
+F:\New folder\MedicalCommunityApp\MedicalCommunity.BLL\bin\Debug\MedicalCommunity.DAO.pdb
+F:\New folder\MedicalCommunityApp\MedicalCommunity.BLL\bin\Debug\MedicalCommunity.DLL.pdb
+F:\New folder\MedicalCommunityApp\MedicalCommunity.BLL\obj\Debug\MedicalCommunity.BLL.csprojResolveAssemblyReference.cache
+F:\New folder\MedicalCommunityApp\MedicalCommunity.BLL\obj\Debug\MedicalCommunity.BLL.dll
+F:\New folder\MedicalCommunityApp\MedicalCommunity.BLL\obj\Debug\MedicalCommunity.BLL.pdb

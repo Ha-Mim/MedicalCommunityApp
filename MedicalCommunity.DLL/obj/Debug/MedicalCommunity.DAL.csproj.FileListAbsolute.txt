@@ -5,3 +5,10 @@ F:\MedicalCommunityApp\MedicalCommunity.DLL\bin\Debug\MedicalCommunity.DAO.pdb
 F:\MedicalCommunityApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DAL.csprojResolveAssemblyReference.cache
 F:\MedicalCommunityApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DLL.dll
 F:\MedicalCommunityApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DLL.pdb
+F:\New folder\MedicalCommunityApp\MedicalCommunity.DLL\bin\Debug\MedicalCommunity.DLL.dll
+F:\New folder\MedicalCommunityApp\MedicalCommunity.DLL\bin\Debug\MedicalCommunity.DLL.pdb
+F:\New folder\MedicalCommunityApp\MedicalCommunity.DLL\bin\Debug\MedicalCommunity.DAO.dll
+F:\New folder\MedicalCommunityApp\MedicalCommunity.DLL\bin\Debug\MedicalCommunity.DAO.pdb
+F:\New folder\MedicalCommunityApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DAL.csprojResolveAssemblyReference.cache
+F:\New folder\MedicalCommunityApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DLL.dll
+F:\New folder\MedicalCommunityApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DLL.pdb

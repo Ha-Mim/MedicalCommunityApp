@@ -8,3 +8,8 @@ F:\MedicalCommunityApp\MedicalCommunity.DAO\bin\Debug\MedicalCommunity.DAO.pdb
 F:\MedicalCommunityApp\MedicalCommunity.DAO\obj\Debug\MedicalCommunity.DAO.dll
 F:\MedicalCommunityApp\MedicalCommunity.DAO\obj\Debug\MedicalCommunity.DAO.pdb
 F:\MedicalCommunityApp\MedicalCommunity.DAO\obj\Debug\MedicalCommunity.DAO.csprojResolveAssemblyReference.cache
+F:\New folder\MedicalCommunityApp\MedicalCommunity.DAO\bin\Debug\MedicalCommunity.DAO.dll
+F:\New folder\MedicalCommunityApp\MedicalCommunity.DAO\bin\Debug\MedicalCommunity.DAO.pdb
+F:\New folder\MedicalCommunityApp\MedicalCommunity.DAO\obj\Debug\MedicalCommunity.DAO.csprojResolveAssemblyReference.cache
+F:\New folder\MedicalCommunityApp\MedicalCommunity.DAO\obj\Debug\MedicalCommunity.DAO.dll
+F:\New folder\MedicalCommunityApp\MedicalCommunity.DAO\obj\Debug\MedicalCommunity.DAO.pdb

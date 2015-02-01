@@ -57,6 +57,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Center\HomePage.aspx" />
+    <Content Include="Center\LoginInCenter.aspx" />
     <Content Include="HeadOffice\DiseaseSetUp.aspx" />
     <Content Include="HeadOffice\NewCenterCreation.aspx" />
     <Content Include="HeadOffice\SendMedicine.aspx" />
@@ -66,6 +68,20 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Center\HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Center\HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Center\LoginInCenter.aspx.cs">
+      <DependentUpon>LoginInCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Center\LoginInCenter.aspx.designer.cs">
+      <DependentUpon>LoginInCenter.aspx</DependentUpon>
+    </Compile>
     <Compile Include="HeadOffice\DiseaseSetUp.aspx.cs">
       <DependentUpon>DiseaseSetUp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

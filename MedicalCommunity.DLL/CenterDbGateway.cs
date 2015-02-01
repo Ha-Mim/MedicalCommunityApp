@@ -23,7 +23,7 @@ namespace MedicalCommunityAutomation.DAL
         public int Find(string code, string password)
         {
              
-            string query = "SELECT *FROM tbl_center WHERE center_code='" + code + "'AND center_password='" + password +
+            string query = "SELECT *FROM tbl_center WHERE code='" + code + "'AND password='" + password +
                            "';";
             ASqlConnection.Open();
             ASqlCommand=new SqlCommand(query,ASqlConnection);

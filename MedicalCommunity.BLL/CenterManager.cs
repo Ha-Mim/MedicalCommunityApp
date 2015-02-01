@@ -28,9 +28,5 @@ namespace MedicalCommunityAutomation.BLL
             return aCenterDbGateway.GetAllCenterByThanaId(id);
         }
 
-        //public List<Center> GetAllCenterByThanaId(int id)
-        //{
-        //    throw new NotImplementedException();
-        //}
     }
 }
