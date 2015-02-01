@@ -22,5 +22,15 @@ namespace MedicalCommunityAutomation.BLL
             return aCenterDbGateway.Find(code, password);
         }
 
+
+        public List<Center> GetAllCenterByThanaId(int id)
+        {
+            return aCenterDbGateway.GetAllCenterByThanaId(id);
+        }
+
+        //public List<Center> GetAllCenterByThanaId(int id)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
