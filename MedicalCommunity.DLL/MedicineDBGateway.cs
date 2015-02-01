@@ -19,5 +19,30 @@ namespace MedicalCommunity.DBGateway
             ASqlCommand.ExecuteNonQuery();
             ASqlConnection.Close();
         }
+
+        public List<Medicine> GetAllMedicine()
+        {
+            string query = "SELECT *FROM tbl_medicine";
+            ASqlConnection.Open();
+            ASqlCommand = new SqlCommand(query, ASqlConnection);
+            ASqlDataReader = ASqlCommand.ExecuteReader();
+            List<Medicine> aMedicineList = new List<Medicine>();
+            while (ASqlDataReader.Read())
+            {
+                Medicine aMedicine = new Medicine();
+                aMedicine.Id = Convert.ToInt32(ASqlDataReader["id"]);
+                aMedicine.Name = ASqlDataReader["Name"].ToString();
+                aMedicine.MgMl = ASqlDataReader["mg_ml"].ToString();
+                aMedicineList.Add(aMedicine);
+            }
+            ASqlDataReader.Close();
+            ASqlConnection.Close();
+            return aMedicineList;
+        }
+
+        public Medicine Find(int toInt32)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

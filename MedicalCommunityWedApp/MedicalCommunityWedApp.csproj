@@ -59,6 +59,7 @@
   <ItemGroup>
     <Content Include="HeadOffice\DiseaseSetUp.aspx" />
     <Content Include="HeadOffice\NewCenterCreation.aspx" />
+    <Content Include="HeadOffice\SendMedicine.aspx" />
     <Content Include="HeadOffice\SetupMedicine.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -74,9 +75,17 @@
     </Compile>
     <Compile Include="HeadOffice\NewCenterCreation.aspx.cs">
       <DependentUpon>NewCenterCreation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="HeadOffice\NewCenterCreation.aspx.designer.cs">
       <DependentUpon>NewCenterCreation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HeadOffice\SendMedicine.aspx.cs">
+      <DependentUpon>SendMedicine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HeadOffice\SendMedicine.aspx.designer.cs">
+      <DependentUpon>SendMedicine.aspx</DependentUpon>
     </Compile>
     <Compile Include="HeadOffice\SetupMedicine.aspx.cs">
       <DependentUpon>SetupMedicine.aspx</DependentUpon>

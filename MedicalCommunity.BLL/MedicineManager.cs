@@ -16,5 +16,15 @@ namespace MedicalCommunity.BLL
             aMedicineDbGateway.Save(aMedicine);
             return "Saved";
         }
+
+        public List<Medicine> GetAllMedicine()
+        {
+            return aMedicineDbGateway.GetAllMedicine();
+        }
+
+        //public object GetAllMedicine()
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

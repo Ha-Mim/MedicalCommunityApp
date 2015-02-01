@@ -41,6 +41,26 @@ namespace MedicalCommunityAutomation.DAL
             ASqlConnection.Close();
             return 0;
         }
+
+
+        public List<Center> GetAllCenterByThanaId(int id)
+        {
+            List<Center> aCenterList = new List<Center>();
+            string query = "SELECT *FROM tbl_center WHERE thana_id = '" + id + "'";
+            ASqlConnection.Open();
+            ASqlCommand = new SqlCommand(query, ASqlConnection);
+            ASqlDataReader = ASqlCommand.ExecuteReader();
+            while (ASqlDataReader.Read())
+            {
+                Center aCenter = new Center();
+                aCenter.Id = Convert.ToInt32(ASqlDataReader["id"]);
+                aCenter.Name = ASqlDataReader["name"].ToString();
+                aCenterList.Add(aCenter);
+            }
+            ASqlDataReader.Close();
+            ASqlConnection.Close();
+            return aCenterList;
+        }
         
     }
 }
