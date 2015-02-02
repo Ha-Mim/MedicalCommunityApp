@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using MedicalCommunity.BLL;
+using MedicalCommunity.DAO;
 using MedicalCommunityAutomation.BLL;
 using MedicalCommunityAutomation.DAO;
 
@@ -27,8 +28,7 @@ namespace CommunityMedicine.UI
                 districtDropDownList.DataBind();
 
                 medicineDropDownList.DataSource = aMedicineManager.GetAllMedicine();
-                medicineDropDownList.DataTextField = "Name";
-                medicineDropDownList.DataValueField = "Id";
+                
                 medicineDropDownList.DataBind();
             }
         }
@@ -53,24 +53,40 @@ namespace CommunityMedicine.UI
             int id = Convert.ToInt32(thanaDropDownList.SelectedValue);
             List<Center> aCenterList = aCenterManager.GetAllCenterByThanaId(id);
             centerDropDownList.DataSource = aCenterList;
-            foreach (Center aCenter in aCenterList)
-            {
-                centerDropDownList.DataTextField = "Name";
-                centerDropDownList.DataValueField = "Id";
-            }
+          
+            centerDropDownList.DataTextField = "Name";
+            centerDropDownList.DataValueField = "Id";
+            
 
             centerDropDownList.DataBind();
         }
 
-        protected void addMedicineButton_Click(object sender, EventArgs e)
+
+        protected void saveButton_Click(object sender, EventArgs e)
         {
-            Stock aStock = new Stock();
-            aStock.DistrictId = Convert.ToInt32(districtDropDownList.SelectedValue);
-            aStock.ThanaId = Convert.ToInt32(thanaDropDownList.SelectedValue);
-            aStock.CenterId = Convert.ToInt32(centerDropDownList.SelectedValue);
-            aStock.MedicineId = Convert.ToInt32(medicineDropDownList.SelectedValue);
-            aStock.Quantity = Convert.ToInt32(quantityTextBox.Text);
-            string msg = aStockManager.AddStockDetails(aStock);
+            string msg = "";
+
+            var nameList = medicineName.Value;
+            medicineName.Value = "";
+            string[] name = nameList.Split(',');
+
+            var quantityList = medicineQuantity.Value;
+            medicineQuantity.Value = "";
+            string[] quantity = quantityList.Split(',');
+
+            for (int i = 0; i < name.Length - 1; i++)
+            {
+                Medicine aMedicine = aMedicineManager.Find(name[i]);
+                Stock aStock = new Stock();
+                aStock.MedicineId = aMedicine.Id;
+                aStock.CenterId = Convert.ToInt32(centerDropDownList.SelectedValue);
+                aStock.Quantity = Convert.ToInt32(quantity[i]);
+                aStock.DistrictId = Convert.ToInt32(districtDropDownList.SelectedValue);
+                aStock.ThanaId = Convert.ToInt32(thanaDropDownList.SelectedValue);
+                msg = aStockManager.AddStockDetails(aStock);
+
+
+            }
             messageLabel.Text = msg;
         }
     }

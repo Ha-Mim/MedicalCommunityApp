@@ -17,5 +17,10 @@ namespace MedicalCommunityAutomation.BLL
             aDiseaseDbGateway.SaveDisease(aDisease);
             return "Successfully Saved";
         }
+
+        public List<Disease> GetAll()
+        {
+            return aDiseaseDbGateway.GetAll();
+        }
     }
 }
