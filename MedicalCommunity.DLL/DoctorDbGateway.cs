@@ -19,5 +19,26 @@ namespace MedicalCommunityAutomation.DAL
             ASqlCommand.ExecuteNonQuery();
             ASqlConnection.Close();
         }
+
+        public List<Doctor> GetAll(int centerId)
+        {
+            List<Doctor> adoctorList = new List<Doctor>();
+            string query = "SELECT *FROM tbl_doctor where centerId="+centerId;
+            ASqlConnection.Open();
+            ASqlCommand = new SqlCommand(query, ASqlConnection);
+            ASqlDataReader = ASqlCommand.ExecuteReader();
+            while (ASqlDataReader.Read())
+            {
+                Doctor aDoctor = new Doctor();
+                aDoctor.Id = Convert.ToInt32(ASqlDataReader["id"]);
+                aDoctor.Name = ASqlDataReader["name"].ToString();
+                aDoctor.Degree = ASqlDataReader["degree"].ToString();
+                aDoctor.Specialization = ASqlDataReader["specialization"].ToString();
+                adoctorList.Add(aDoctor);
+            }
+            ASqlDataReader.Close();
+            ASqlConnection.Close();
+            return adoctorList;
+        }
     }
 }

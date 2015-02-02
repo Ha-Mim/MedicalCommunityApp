@@ -67,13 +67,22 @@ namespace CommunityMedicine.UI {
         protected global::System.Web.UI.WebControls.TextBox quantityTextBox;
         
         /// <summary>
-        /// addMedicineButton control.
+        /// tbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button addMedicineButton;
+        protected global::System.Web.UI.HtmlControls.HtmlTable tbl;
+        
+        /// <summary>
+        /// saveButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button saveButton;
         
         /// <summary>
         /// messageLabel control.
@@ -85,21 +94,21 @@ namespace CommunityMedicine.UI {
         protected global::System.Web.UI.WebControls.Label messageLabel;
         
         /// <summary>
-        /// medicineGridView control.
+        /// medicineName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView medicineGridView;
+        protected global::System.Web.UI.HtmlControls.HtmlInputHidden medicineName;
         
         /// <summary>
-        /// saveButton control.
+        /// medicineQuantity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button saveButton;
+        protected global::System.Web.UI.HtmlControls.HtmlInputHidden medicineQuantity;
     }
 }

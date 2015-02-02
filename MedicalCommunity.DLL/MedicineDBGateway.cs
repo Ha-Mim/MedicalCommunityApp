@@ -57,5 +57,25 @@ namespace MedicalCommunity.DLL
             ASqlConnection.Close();
             return aMedicine;
         }
+
+        public Medicine Find(string name)
+        {
+            string query = "SELECT *FROM tbl_medicine where Name='" +name+"';" ;
+            ASqlConnection.Open();
+            ASqlCommand = new SqlCommand(query, ASqlConnection);
+            ASqlDataReader = ASqlCommand.ExecuteReader();
+            Medicine aMedicine = new Medicine();
+            while (ASqlDataReader.Read())
+            {
+
+                aMedicine.Id = Convert.ToInt32(ASqlDataReader["id"]);
+                aMedicine.Name = ASqlDataReader["Name"].ToString();
+                aMedicine.MgMl = ASqlDataReader["mg_ml"].ToString();
+
+            }
+            ASqlDataReader.Close();
+            ASqlConnection.Close();
+            return aMedicine;
+        }
     }
 }

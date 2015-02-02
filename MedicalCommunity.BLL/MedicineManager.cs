@@ -22,9 +22,10 @@ namespace MedicalCommunity.BLL
             return aMedicineDbGateway.GetAllMedicine();
         }
 
-        //public object GetAllMedicine()
-        //{
-        //    throw new NotImplementedException();
-        //}
+     
+        public Medicine Find(string name)
+        {
+            return aMedicineDbGateway.Find(name);
+        }
     }
 }

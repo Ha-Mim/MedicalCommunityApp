@@ -1,12 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SendMedicine.aspx.cs" Inherits="CommunityMedicine.UI.SendMedicine" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SendMedicine.aspx.cs" Inherits="CommunityMedicine.UI.SendMedicine" EnableEventValidation="false" %>
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="myApp">
 <head runat="server">
     <title></title>
 </head>
-<body>
+<body ng-controller="myController">
     <form id="form1" runat="server">
     <div>
     
@@ -44,32 +44,58 @@
             <tr>
                 <td>Select Medicine</td>
                 <td>
-                    <asp:DropDownList ID="medicineDropDownList" runat="server">
+                    <asp:DropDownList  ng-model="name" ID="medicineDropDownList" runat="server">
                     </asp:DropDownList>
                 </td>
                 <td>Quantity</td>
                 <td>
-                    <asp:TextBox ID="quantityTextBox" runat="server"></asp:TextBox>
+                    <asp:TextBox ng-model="quantity" ID="quantityTextBox" runat="server"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:Button ID="addMedicineButton" runat="server" Text="Add" OnClick="addMedicineButton_Click" />
-                    <asp:Label ID="messageLabel" runat="server"></asp:Label>
+                    <button type="button" ng-click="AddMedicine(name,quantity)" class="btn btn-success">Add</button>
                 </td>
             </tr>
         </table>
         <br />
         <br />
-        <asp:GridView ID="medicineGridView" runat="server" AutoGenerateColumns="False">
-            <Columns>
-                <asp:TemplateField HeaderText="Name"></asp:TemplateField>
-                <asp:TemplateField HeaderText="Quantity"></asp:TemplateField>
-            </Columns>
-        </asp:GridView>
+       <div class="form-group">
+                    <table id="tbl" runat="server" class="table table-hover">
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Quantity</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="aMedicine in medicines">
+                                <td>{{aMedicine.Name}}</td>
+                                <td>{{aMedicine.Quantity}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
         <br />
-        <asp:Button ID="saveButton" runat="server" Text="Save" />
+        <asp:Button ID="saveButton" runat="server" Text="Save" OnClick="saveButton_Click" />
+                           <asp:Label ID="messageLabel" runat="server"></asp:Label>
         <br/>
-
+         <input type="hidden" id="medicineName" runat="server"/>
+        <input type="hidden" id="medicineQuantity" runat="server"/>
     </div>
     </form>
+       <script src="../Scripts/angular.js"></script>
+    <script>
+        var myApplication = angular.module("myApp", []);
+        myApplication.controller("myController", function ($scope) {
+            $scope.medicines = [];
+            $scope.AddMedicine = function (name, quantity) {
+                if (name != String.empty && quantity != String.empty) {
+                    $scope.medicines.push({ Name: name, Quantity: quantity });
+                    var medicineName = name.split(",");
+                    document.getElementById("medicineName").value += medicineName[0] + ",";
+                    document.getElementById("medicineQuantity").value += quantity + ",";
+                }
+            };
+        });
+    </script>
 </body>
 </html>

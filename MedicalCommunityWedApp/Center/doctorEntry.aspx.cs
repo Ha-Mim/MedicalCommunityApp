@@ -1,4 +1,5 @@
 ﻿using System;
+using MedicalCommunity.BLL;
 using MedicalCommunityAutomation.BLL;
 using MedicalCommunityAutomation.DAO;
 

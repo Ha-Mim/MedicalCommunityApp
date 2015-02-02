@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MedicalCommunityAutomation.DAL;
 using MedicalCommunityAutomation.DAO;
 
-namespace MedicalCommunityAutomation.BLL
+namespace MedicalCommunity.BLL
 {
     public class DoctorManager
     {
@@ -16,6 +13,11 @@ namespace MedicalCommunityAutomation.BLL
         {
             aDoctorDbGateway.Save(aDoctor);
             return "Successfully Saved";
+        }
+
+        public List<Doctor> GetAll(int centerId)
+        {
+            return aDoctorDbGateway.GetAll(centerId);
         }
     }
 }
