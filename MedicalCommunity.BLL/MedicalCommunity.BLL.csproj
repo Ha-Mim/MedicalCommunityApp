@@ -50,6 +50,7 @@
     <Compile Include="StockManager.cs" />
     <Compile Include="ThanaManager.cs" />
     <Compile Include="TreatmentManager.cs" />
+    <Compile Include="ViewHistoryManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MedicalCommunity.DAO\MedicalCommunity.DAO.csproj">

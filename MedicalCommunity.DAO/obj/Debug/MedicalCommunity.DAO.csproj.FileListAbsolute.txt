@@ -18,3 +18,8 @@ D:\asp.net\MedicalCommunityApp\MedicalCommunity.DAO\bin\Debug\MedicalCommunity.D
 D:\asp.net\MedicalCommunityApp\MedicalCommunity.DAO\obj\Debug\MedicalCommunity.DAO.dll
 D:\asp.net\MedicalCommunityApp\MedicalCommunity.DAO\obj\Debug\MedicalCommunity.DAO.pdb
 D:\asp.net\MedicalCommunityApp\MedicalCommunity.DAO\obj\Debug\MedicalCommunity.DAO.csprojResolveAssemblyReference.cache
+F:\hyder\MedicalCommunityApp\MedicalCommunity.DAO\bin\Debug\MedicalCommunity.DAO.dll
+F:\hyder\MedicalCommunityApp\MedicalCommunity.DAO\bin\Debug\MedicalCommunity.DAO.pdb
+F:\hyder\MedicalCommunityApp\MedicalCommunity.DAO\obj\Debug\MedicalCommunity.DAO.csprojResolveAssemblyReference.cache
+F:\hyder\MedicalCommunityApp\MedicalCommunity.DAO\obj\Debug\MedicalCommunity.DAO.dll
+F:\hyder\MedicalCommunityApp\MedicalCommunity.DAO\obj\Debug\MedicalCommunity.DAO.pdb

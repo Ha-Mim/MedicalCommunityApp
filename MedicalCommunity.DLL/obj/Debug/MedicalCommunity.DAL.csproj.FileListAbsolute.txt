@@ -19,3 +19,10 @@ D:\asp.net\MedicalCommunityApp\MedicalCommunity.DLL\bin\Debug\MedicalCommunity.D
 D:\asp.net\MedicalCommunityApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DAL.csprojResolveAssemblyReference.cache
 D:\asp.net\MedicalCommunityApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DLL.dll
 D:\asp.net\MedicalCommunityApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DLL.pdb
+F:\hyder\MedicalCommunityApp\MedicalCommunity.DLL\bin\Debug\MedicalCommunity.DLL.dll
+F:\hyder\MedicalCommunityApp\MedicalCommunity.DLL\bin\Debug\MedicalCommunity.DLL.pdb
+F:\hyder\MedicalCommunityApp\MedicalCommunity.DLL\bin\Debug\MedicalCommunity.DAO.dll
+F:\hyder\MedicalCommunityApp\MedicalCommunity.DLL\bin\Debug\MedicalCommunity.DAO.pdb
+F:\hyder\MedicalCommunityApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DAL.csprojResolveAssemblyReference.cache
+F:\hyder\MedicalCommunityApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DLL.dll
+F:\hyder\MedicalCommunityApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DLL.pdb

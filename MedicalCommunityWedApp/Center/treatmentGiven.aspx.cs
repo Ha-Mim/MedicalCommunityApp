@@ -54,13 +54,16 @@ namespace MedicalCommunityWedApp.Center
         protected void showDetailsButton_Click(object sender, EventArgs e)
         {
             string id = voterIdTextBox.Text;
+            Session["id"] = id;
             XmlDocument xml = new XmlDocument();
             String URLString = "http://nerdcastlebd.com/web_service/voterdb/index.php/voters/voter/"+id;
             xml.Load(URLString);
             XmlNode name = xml.SelectSingleNode("xml/voter/name");
             nameTextBox.Text = name.InnerText;
+            Session["name"] = nameTextBox.Text;
             XmlNode address = xml.SelectSingleNode("xml/voter/address");
             addressTextBox.Text = address.InnerText;
+            Session["address"] = addressTextBox.Text;
             XmlNode node = xml.SelectSingleNode("xml/voter/date_of_birth");
             DateTime dateOfBirth = Convert.ToDateTime(node.InnerText);
             ageTextBox.Text = GetAge(dateOfBirth).ToString();

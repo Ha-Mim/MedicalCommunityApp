@@ -1,0 +1,11 @@
+F:\hyder\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunityWedApp.dll
+F:\hyder\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunityWedApp.pdb
+F:\hyder\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunity.BLL.dll
+F:\hyder\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunity.DAO.dll
+F:\hyder\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunity.DLL.dll
+F:\hyder\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunity.BLL.pdb
+F:\hyder\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunity.DAO.pdb
+F:\hyder\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunity.DLL.pdb
+F:\hyder\MedicalCommunityApp\MedicalCommunityWedApp\obj\Debug\MedicalCommunityWebApp.csprojResolveAssemblyReference.cache
+F:\hyder\MedicalCommunityApp\MedicalCommunityWedApp\obj\Debug\MedicalCommunityWedApp.dll
+F:\hyder\MedicalCommunityApp\MedicalCommunityWedApp\obj\Debug\MedicalCommunityWedApp.pdb

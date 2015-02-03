@@ -53,6 +53,7 @@
     <Compile Include="StockDbGateway.cs" />
     <Compile Include="ThanaDbGateway.cs" />
     <Compile Include="TreatmentDbGateway.cs" />
+    <Compile Include="ViewHistoryDBGateway.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MedicalCommunity.DAO\MedicalCommunity.DAO.csproj">

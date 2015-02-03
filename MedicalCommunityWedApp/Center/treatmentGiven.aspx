@@ -27,7 +27,7 @@
         <asp:TextBox ID="serviceGivenTextBox" runat="server"></asp:TextBox>
         <asp:Label ID="Label14" runat="server" Text="Times"></asp:Label>
         <br/>
-        <asp:HyperLink ID="HyperLink1" runat="server">Show All History</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/ShowHistory/ShowHistory.aspx">Show All History</asp:HyperLink>
         <br/>
         <asp:Label ID="Label1" runat="server" Text="Observation"></asp:Label>
         <asp:TextBox ID="observationTextBox" runat="server"></asp:TextBox>

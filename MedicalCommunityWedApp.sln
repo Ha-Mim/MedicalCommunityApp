@@ -1,9 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicalCommunityWedApp", "MedicalCommunityWedApp\MedicalCommunityWedApp.csproj", "{AEA959A5-4E24-4FDA-B27D-582BE311C175}"
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicalCommunityWebApp", "MedicalCommunityWedApp\MedicalCommunityWebApp.csproj", "{AEA959A5-4E24-4FDA-B27D-582BE311C175}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicalCommunity.DAO", "MedicalCommunity.DAO\MedicalCommunity.DAO.csproj", "{798AB53A-80B1-4A0F-97D4-9C2233B8A459}"
 EndProject

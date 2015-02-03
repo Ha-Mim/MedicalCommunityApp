@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MedicalCommunity.DAO;
-using MedicalCommunityAutomation.DAO;
+using MedicalCommunityAutomation.DAL;
 
-namespace MedicalCommunityAutomation.DAL
+namespace MedicalCommunity.DLL
 {
     public class DiseaseDbGateway:DbGateway
     {
@@ -65,6 +62,24 @@ namespace MedicalCommunityAutomation.DAL
             ASqlDataReader.Close();
             ASqlConnection.Close();
             return aDisease.Id;
+        }
+        public Disease Find(int id)
+        {
+            Disease aDisease = new Disease();
+            string query = "SELECT *FROM tbl_disease WHERE id = '" + id + "'";
+            ASqlConnection.Open();
+            ASqlCommand = new SqlCommand(query, ASqlConnection);
+            ASqlDataReader = ASqlCommand.ExecuteReader();
+            while (ASqlDataReader.Read())
+            {
+
+                aDisease.Id = Convert.ToInt32(ASqlDataReader["id"]);
+                aDisease.Name = ASqlDataReader["name"].ToString();
+
+            }
+            ASqlDataReader.Close();
+            ASqlConnection.Close();
+            return aDisease;
         }
     }
 }

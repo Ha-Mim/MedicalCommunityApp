@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MedicalCommunity.DAO;
+using MedicalCommunity.DLL;
 using MedicalCommunityAutomation.DAL;
 using MedicalCommunityAutomation.DAO;
 

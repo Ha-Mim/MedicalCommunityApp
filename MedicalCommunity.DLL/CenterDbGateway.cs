@@ -90,6 +90,26 @@ namespace MedicalCommunityAutomation.DAL
 
         }
 
+        public Center Search(int id)
+        {
+            Center aCenter = new Center();
+            string query = "SELECT *FROM tbl_center WHERE id = '" + id + "'";
+            ASqlConnection.Open();
+            ASqlCommand = new SqlCommand(query, ASqlConnection);
+            ASqlDataReader = ASqlCommand.ExecuteReader();
+            while (ASqlDataReader.Read())
+            {
+
+                aCenter.Id = Convert.ToInt32(ASqlDataReader["id"]);
+                aCenter.Name = ASqlDataReader["name"].ToString();
+
+            }
+            ASqlDataReader.Close();
+            ASqlConnection.Close();
+            return aCenter;
+
+        }
+
         
     }
 }

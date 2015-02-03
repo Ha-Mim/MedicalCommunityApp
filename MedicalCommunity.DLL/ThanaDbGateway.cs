@@ -32,5 +32,23 @@ namespace MedicalCommunity.DLL
 
            return thanaList;
        }
+       public Thana Find(int id)
+       {
+           Thana aThana = new Thana();
+           string query = "SELECT *FROM tbl_thana WHERE id = '" + id + "'";
+           ASqlConnection.Open();
+           ASqlCommand = new SqlCommand(query, ASqlConnection);
+           ASqlDataReader = ASqlCommand.ExecuteReader();
+           while (ASqlDataReader.Read())
+           {
+
+               aThana.Id = Convert.ToInt32(ASqlDataReader["id"]);
+               aThana.Name = ASqlDataReader["name"].ToString();
+
+           }
+           ASqlDataReader.Close();
+           ASqlConnection.Close();
+           return aThana;
+       }
     }
 }
