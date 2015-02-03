@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MedicalCommunity.DAO;
 using MedicalCommunityAutomation.DAO;
 
 namespace MedicalCommunityAutomation.DAL
@@ -41,6 +42,29 @@ namespace MedicalCommunityAutomation.DAL
             ASqlDataReader.Close();
             ASqlConnection.Close();
             return diseaseList;
+        }
+
+        public int Find(string name)
+        {
+            
+            string query = "SELECT *FROM tbl_disease where name='"+name+"';";
+            ASqlConnection.Open();
+            ASqlCommand = new SqlCommand(query, ASqlConnection);
+            ASqlDataReader = ASqlCommand.ExecuteReader();
+            Disease aDisease = new Disease();
+            while (ASqlDataReader.Read())
+            {
+                
+                aDisease.Id = Convert.ToInt32(ASqlDataReader["id"]);
+                aDisease.Name = ASqlDataReader["name"].ToString();
+                aDisease.Description = ASqlDataReader["description"].ToString();
+                aDisease.TreatmentProcedure = ASqlDataReader["treatment_procedure"].ToString();
+                aDisease.PreferedDrugs = ASqlDataReader["prefered_drugs"].ToString();
+                
+            }
+            ASqlDataReader.Close();
+            ASqlConnection.Close();
+            return aDisease.Id;
         }
     }
 }

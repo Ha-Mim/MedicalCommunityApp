@@ -61,6 +61,35 @@ namespace MedicalCommunityAutomation.DAL
             ASqlConnection.Close();
             return aCenterList;
         }
+
+
+        public Center GetCenterByName(string name)
+        {
+            string query = "SELECT *FROM tbl_center WHERE name='" + name + "';";
+            ASqlConnection.Open();
+            ASqlCommand = new SqlCommand(query, ASqlConnection);
+            ASqlDataReader = ASqlCommand.ExecuteReader();
+            if (ASqlDataReader.HasRows)
+            {
+                Center aCenter = new Center();
+                while (ASqlDataReader.Read())
+                {
+                    aCenter.Id = Convert.ToInt32(ASqlDataReader["id"]);
+                    aCenter.Name = ASqlDataReader["name"].ToString();
+                    aCenter.DistrictId = Convert.ToInt32(ASqlDataReader["district_id"]);
+                    aCenter.ThanaId = Convert.ToInt32(ASqlDataReader["thana_id"]);
+                    aCenter.Code = ASqlDataReader["code"].ToString();
+                    aCenter.Password = ASqlDataReader["password"].ToString();
+                }
+
+                ASqlConnection.Close();
+                return aCenter;
+            }
+            ASqlConnection.Close();
+            return null;
+
+        }
+
         
     }
 }

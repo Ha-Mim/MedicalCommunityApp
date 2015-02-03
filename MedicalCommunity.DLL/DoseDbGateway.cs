@@ -30,5 +30,26 @@ namespace MedicalCommunity.DLL
            ASqlConnection.Close();
            return DoseList;
        }
+       public Dose Find(string name)
+       {
+           string query = "Select * from tbl_dose where dose='" + name + "';";
+           ASqlConnection.Open();
+           ASqlCommand = new SqlCommand(query, ASqlConnection);
+           ASqlDataReader = ASqlCommand.ExecuteReader();
+
+           int service = 0;
+           Dose aDose = new Dose();
+           while (ASqlDataReader.Read())
+           {
+
+               aDose.Id = (int)ASqlDataReader["id"];
+               aDose.Time = ASqlDataReader["time"].ToString();
+
+           }
+           ASqlDataReader.Close();
+           ASqlConnection.Close();
+
+           return aDose;
+       }
     }
 }

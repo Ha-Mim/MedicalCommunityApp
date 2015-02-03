@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml;
+using iTextSharp.text;
+using iTextSharp.text.html.simpleparser;
+using iTextSharp.text.pdf;
 using MedicalCommunity.BLL;
 using MedicalCommunity.DAO;
 using MedicalCommunityAutomation.BLL;
@@ -19,6 +23,7 @@ namespace MedicalCommunityWedApp.Center
         MedicineManager aMedicineManager = new MedicineManager();
         DoseManager aDoseManager = new DoseManager();
         TreatmentManager aTreatmentManager=new TreatmentManager();
+        PatientManager aPatientManager=new PatientManager();
         protected void Page_Load(object sender, EventArgs e)
         {
             int centerId = Convert.ToInt32(Session["id"]);
@@ -30,72 +35,21 @@ namespace MedicalCommunityWedApp.Center
                 doctorDropDownList.DataBind();
 
                 diseaseDropDownList.DataSource = aDiseaseManager.GetAll();
-                diseaseDropDownList.DataTextField = "Name";
-                diseaseDropDownList.DataValueField = "Id";
+                
                 diseaseDropDownList.DataBind();
 
                 medicineDropDownList.DataSource = aMedicineManager.GetAllMedicine();
-                medicineDropDownList.DataTextField = "Name";
-                medicineDropDownList.DataValueField = "Id";
+                
                 medicineDropDownList.DataBind();
 
                 doseDropDownList.DataSource = aDoseManager.GetAll();
-                doseDropDownList.DataTextField = "Time";
-                doseDropDownList.DataValueField = "Id";
+              
                 doseDropDownList.DataBind();
 
             }
         }
 
-        protected void addButton_Click(object sender, EventArgs e)
-        {
-            string msg = "";
-
-            var diseaseList = disease.Value;
-            disease.Value = "";
-            string[] diseaseName = diseaseList.Split(',');
-
-            var mediceneList = medicine.Value;
-            disease.Value = "";
-            string[] medicineName = mediceneList.Split(',');
-
-            var quantityList = quantity.Value;
-            quantity.Value = "";
-            string[] quantityValue = quantityList.Split(',');
-
-            //    for (int i = 0; i < diseaseName.Length - 1; i++)
-            //    {
-            //        Medicine aMedicine = aMedicineManager.Find(name[i]);
-            //        Stock aStock = new Stock();
-            //        aStock.MedicineId = aMedicine.Id;
-            //        aStock.CenterId = Convert.ToInt32(centerDropDownList.SelectedValue);
-            //        aStock.Quantity = Convert.ToInt32(quantity[i]);
-            //        aStock.DistrictId = Convert.ToInt32(districtDropDownList.SelectedValue);
-            //        aStock.ThanaId = Convert.ToInt32(thanaDropDownList.SelectedValue);
-            //        msg = aStockManager.AddStockDetails(aStock);
-
-
-            //    }
-            //    messageLabel.Text = msg;
-            //}
-            //    Treatment aTreatment = new Treatment();
-            //    aTreatment.DiseaseId = Convert.ToInt32(diseaseDropDownList.SelectedValue);
-            //    aTreatment.DoseId = Convert.ToInt32(doseDropDownList.SelectedValue);
-            //    aTreatment.MedicineId = Convert.ToInt32(medicineDropDownList.SelectedValue);
-            //    aTreatment.Note = noteTextBox.Text;
-            //    aTreatment.Quantity = Convert.ToInt32(quantitygivenTextBox.Text);
-            //    if (timeOfMealRadioButtonList.Text=="Before Meal")
-            //    {
-            //        aTreatment.TimeOfMeal = true;
-            //    }
-            //    else
-            //    {
-            //        aTreatment.TimeOfMeal = false;
-            //    }
-            //    string msg=aTreatmentManager.Save(aTreatment);
-            //    msgLabel.Text = msg;
-            //}
-        }
+      
 
         protected void showDetailsButton_Click(object sender, EventArgs e)
         {
@@ -108,8 +62,13 @@ namespace MedicalCommunityWedApp.Center
             XmlNode address = xml.SelectSingleNode("xml/voter/address");
             addressTextBox.Text = address.InnerText;
             XmlNode node = xml.SelectSingleNode("xml/voter/date_of_birth");
-           DateTime dateOfBirth = Convert.ToDateTime(node.InnerText);
-            dateOfBirthTextBox.Text = GetAge(dateOfBirth).ToString();
+            DateTime dateOfBirth = Convert.ToDateTime(node.InnerText);
+            ageTextBox.Text = GetAge(dateOfBirth).ToString();
+            Treatment aTreatment = new Treatment();
+            string patientName = nameTextBox.Text;
+            aTreatment.PatientId = aPatientManager.Search(patientName).Id;
+            serviceGivenTextBox.Text = aTreatmentManager.Count(aTreatment.PatientId).ToString();
+
         }
         public static Int32 GetAge( DateTime dateOfBirth)
         {
@@ -119,6 +78,77 @@ namespace MedicalCommunityWedApp.Center
             var b = (dateOfBirth.Year * 100 + dateOfBirth.Month) * 100 + dateOfBirth.Day;
 
             return (a - b) / 10000;
+        }
+
+        protected void saveButton_Click(object sender, EventArgs e)
+        {
+             string msg = "";
+
+            var diseaseList = diseaseName.Value;
+            diseaseName.Value = "";
+            string[] disease = diseaseList.Split(',');
+
+            var mediceneList = medicineName.Value;
+            medicineName.Value = "";
+            string[] medicine = mediceneList.Split(',');
+
+            var doseList = doseName.Value;
+            doseName.Value = "";
+            string[] dose = diseaseList.Split(',');
+
+            var timeOfMealList = timeOfMealName.Value;
+            timeOfMealName.Value = "";
+            string[] timeOfMeal = timeOfMealList.Split(',');
+            var quantityList = quantityName.Value;
+            quantityName.Value = "";
+            string[] quantityValue = quantityList.Split(',');
+         
+
+            var noteList = noteName.Value;
+            noteName.Value = "";
+            string[] note = noteList.Split(',');
+
+            for (int i = 0; i < medicine.Length  ; i++)
+            {
+                Treatment aTreatment = new Treatment();
+                string name = nameTextBox.Text;
+                aTreatment.PatientId = aPatientManager.Search(name).Id;
+                aTreatment.DiseaseId = aDiseaseManager.Find(disease[i]);
+                aTreatment.DoseId = aDoseManager.Find(dose[i]).Id;
+                aTreatment.MedicineId = aMedicineManager.Find(medicine[i]).Id;
+                aTreatment.Note = note[i];
+                aTreatment.Date = dateCalendar.SelectedDate;
+                aTreatment.Quantity = Convert.ToInt32(quantityValue[i]);
+                if (timeOfMealRadioButtonList.Text == "Before Meal")
+                {
+                    aTreatment.TimeOfMeal = true;
+                }
+                else
+                {
+                    aTreatment.TimeOfMeal = false;
+                }
+                msg = aTreatmentManager.Save(aTreatment);
+            }
+            msgLabel.Text = msg;
+        }
+
+        protected void printButton_Click(object sender, EventArgs e)
+        {
+            Response.ContentType = "application/pdf";
+            Response.AddHeader("content-disposition", "attachment;filename=Pescription.pdf");
+            Response.Cache.SetCacheability(HttpCacheability.NoCache);
+            StringWriter sw = new StringWriter();
+            HtmlTextWriter hw = new HtmlTextWriter(sw);
+            print.RenderControl(hw);
+            StringReader sr = new StringReader(sw.ToString());
+            Document pdfDoc = new Document(PageSize.A4, 10f, 10f, 100f, 0f);
+            HTMLWorker htmlparser = new HTMLWorker(pdfDoc);
+            PdfWriter.GetInstance(pdfDoc, Response.OutputStream);
+            pdfDoc.Open();
+            htmlparser.Parse(sr);
+            pdfDoc.Close();
+            Response.Write(pdfDoc);
+            Response.End();
         }
     }
 }

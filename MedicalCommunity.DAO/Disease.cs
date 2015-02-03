@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Remoting.Metadata.W3cXsd2001;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MedicalCommunityAutomation.DAO
+﻿namespace MedicalCommunity.DAO
 {
     public class Disease
     {
@@ -14,6 +7,10 @@ namespace MedicalCommunityAutomation.DAO
         public string Description { set; get; }
         public string TreatmentProcedure { set; get; }
         public string PreferedDrugs { set; get; }
+        public override string ToString()
+        {
+            return Name;
+        }
 
     }
 }

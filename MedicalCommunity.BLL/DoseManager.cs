@@ -15,5 +15,9 @@ namespace MedicalCommunity.BLL
         {
             return aDoseDbGateway.GetAll();
         }
+        public Dose Find(string name)
+        {
+            return aDoseDbGateway.Find(name);
+        }
     }
 }

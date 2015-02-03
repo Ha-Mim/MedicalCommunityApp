@@ -292,13 +292,13 @@ namespace MedicalCommunityWedApp.Center {
         protected global::System.Web.UI.WebControls.TextBox noteTextBox;
         
         /// <summary>
-        /// msgLabel control.
+        /// print control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label msgLabel;
+        protected global::System.Web.UI.WebControls.Panel print;
         
         /// <summary>
         /// tbl control.
@@ -319,57 +319,75 @@ namespace MedicalCommunityWedApp.Center {
         protected global::System.Web.UI.WebControls.Button saveButton;
         
         /// <summary>
-        /// disease control.
+        /// msgLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputHidden disease;
+        protected global::System.Web.UI.WebControls.Label msgLabel;
         
         /// <summary>
-        /// medicine control.
+        /// printButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputHidden medicine;
+        protected global::System.Web.UI.WebControls.Button printButton;
         
         /// <summary>
-        /// dose control.
+        /// diseaseName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputHidden dose;
+        protected global::System.Web.UI.HtmlControls.HtmlInputHidden diseaseName;
         
         /// <summary>
-        /// timeOfMeal control.
+        /// medicineName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputHidden timeOfMeal;
+        protected global::System.Web.UI.HtmlControls.HtmlInputHidden medicineName;
         
         /// <summary>
-        /// quantity control.
+        /// doseName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputHidden quantity;
+        protected global::System.Web.UI.HtmlControls.HtmlInputHidden doseName;
         
         /// <summary>
-        /// note control.
+        /// timeOfMealName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputHidden note;
+        protected global::System.Web.UI.HtmlControls.HtmlInputHidden timeOfMealName;
+        
+        /// <summary>
+        /// quantityName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputHidden quantityName;
+        
+        /// <summary>
+        /// noteName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputHidden noteName;
     }
 }

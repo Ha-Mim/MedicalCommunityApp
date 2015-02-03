@@ -13,7 +13,7 @@ namespace MedicalCommunity.DAO
         public string MgMl { set; get; }
         public override string ToString()
         {
-            return Name + ", " + MgMl ;
+            return Name + " , " + MgMl ;
         }
     }
 }

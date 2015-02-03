@@ -35,6 +35,8 @@ F:\New folder\MedicalCommunityApp\MedicalCommunityWedApp\obj\Debug\MedicalCommun
 D:\asp.net\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunityWedApp.dll.config
 D:\asp.net\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunityWedApp.dll
 D:\asp.net\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunityWedApp.pdb
+D:\asp.net\MedicalCommunityApp\MedicalCommunityWedApp\bin\itextsharp.dll
+D:\asp.net\MedicalCommunityApp\MedicalCommunityWedApp\bin\itextsharp.pdfa.dll
 D:\asp.net\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunity.BLL.dll
 D:\asp.net\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunity.DAO.dll
 D:\asp.net\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunity.DLL.dll

@@ -23,6 +23,8 @@ namespace MedicalCommunityAutomation
                 districtDropDownList.DataTextField = "Name";
                 districtDropDownList.DataValueField = "Id";
                 districtDropDownList.DataBind();
+
+                
             }
         }
 
@@ -36,16 +38,20 @@ namespace MedicalCommunityAutomation
             aCenter.ThanaId = Convert.ToInt32(thanaDropDownList.SelectedValue);
             string msg = aCenterManager.SaveCenter(aCenter);
             msgLabel.Text = msg;
+            Session["code"] = aCenter.Name;
+            Response.Redirect("LoginCodePassword.aspx");
+
 
         }
 
         protected void districtDropDownList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int number = Convert.ToInt32(districtDropDownList.SelectedValue);
-            thanaDropDownList.DataSource = aThanaManager.GetThanasByDistrictId(number);
+            thanaDropDownList.DataSource =
+                aThanaManager.GetThanasByDistrictId(Convert.ToInt32(districtDropDownList.SelectedValue));
             thanaDropDownList.DataTextField = "Name";
             thanaDropDownList.DataValueField = "Id";
             thanaDropDownList.DataBind();
+
 
         }
     }

@@ -48,6 +48,7 @@
     <Compile Include="DoctorDbGateway.cs" />
     <Compile Include="DoseDbGateway.cs" />
     <Compile Include="MedicineDBGateway.cs" />
+    <Compile Include="PatientDbGateway.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StockDbGateway.cs" />
     <Compile Include="ThanaDbGateway.cs" />

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MedicalCommunity.DAO;
 using MedicalCommunityAutomation.DAL;
 using MedicalCommunityAutomation.DAO;
 
@@ -21,6 +22,11 @@ namespace MedicalCommunityAutomation.BLL
         public List<Disease> GetAll()
         {
             return aDiseaseDbGateway.GetAll();
+        }
+
+        public int Find(string name)
+        {
+            return aDiseaseDbGateway.Find(name);
         }
     }
 }

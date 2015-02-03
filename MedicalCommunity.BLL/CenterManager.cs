@@ -28,5 +28,10 @@ namespace MedicalCommunityAutomation.BLL
             return aCenterDbGateway.GetAllCenterByThanaId(id);
         }
 
+
+        public Center GetCenterByName(string name)
+        {
+            return aCenterDbGateway.GetCenterByName(name);
+        }
     }
 }

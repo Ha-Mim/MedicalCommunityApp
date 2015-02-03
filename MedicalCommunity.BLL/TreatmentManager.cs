@@ -17,9 +17,12 @@ namespace MedicalCommunity.BLL
           return "Saved";
       }
 
-      //public List<Treatment> GetAllDate()
-      //{
-      //   return aTreatmentDbGateway.GetAllDate();
-      //}
+    
+      public int Count(int patientId)
+      {
+          return aTreatmentDbGateway.Count(patientId);
+      }
+
+      
     }
 }

@@ -38,6 +38,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>C:\Users\fujitsu\Downloads\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>C:\Users\fujitsu\Downloads\itextsharp.pdfa.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -64,6 +70,7 @@
     <Content Include="Center\stockReport.aspx" />
     <Content Include="Center\treatmentGiven.aspx" />
     <Content Include="HeadOffice\DiseaseSetUp.aspx" />
+    <Content Include="HeadOffice\LoginCodePassword.aspx" />
     <Content Include="HeadOffice\NewCenterCreation.aspx" />
     <Content Include="HeadOffice\SendMedicine.aspx" />
     <Content Include="HeadOffice\SetupMedicine.aspx" />
@@ -886,6 +893,13 @@
     </Compile>
     <Compile Include="HeadOffice\DiseaseSetUp.aspx.designer.cs">
       <DependentUpon>DiseaseSetUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HeadOffice\LoginCodePassword.aspx.cs">
+      <DependentUpon>LoginCodePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HeadOffice\LoginCodePassword.aspx.designer.cs">
+      <DependentUpon>LoginCodePassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="HeadOffice\NewCenterCreation.aspx.cs">
       <DependentUpon>NewCenterCreation.aspx</DependentUpon>

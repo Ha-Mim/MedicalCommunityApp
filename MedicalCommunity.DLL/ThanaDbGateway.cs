@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MedicalCommunityAutomation.DAL;
 using MedicalCommunityAutomation.DAO;
 
-namespace MedicalCommunityAutomation.DAL
+namespace MedicalCommunity.DLL
 {
    public class ThanaDbGateway : DbGateway
     {

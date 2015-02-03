@@ -10,5 +10,9 @@ namespace MedicalCommunity.DAO
     {
         public int Id { set; get; }
         public string Time { set; get; }
+        public override string ToString()
+        {
+            return Time;
+        }
     }
 }

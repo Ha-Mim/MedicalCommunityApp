@@ -15,5 +15,7 @@ namespace MedicalCommunity.DAO
         public bool TimeOfMeal { set; get; }
         public int Quantity { set; get; }
         public string Note { set; get; }
+        public DateTime Date { set; get; }
+        public int PatientId { set; get; }
     }
 }
