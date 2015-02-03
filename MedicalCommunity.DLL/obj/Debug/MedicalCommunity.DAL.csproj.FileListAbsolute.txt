@@ -26,3 +26,10 @@ F:\hyder\MedicalCommunityApp\MedicalCommunity.DLL\bin\Debug\MedicalCommunity.DAO
 F:\hyder\MedicalCommunityApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DAL.csprojResolveAssemblyReference.cache
 F:\hyder\MedicalCommunityApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DLL.dll
 F:\hyder\MedicalCommunityApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DLL.pdb
+D:\MedicalCommunityApp\MedicalCommunity.DLL\bin\Debug\MedicalCommunity.DLL.dll
+D:\MedicalCommunityApp\MedicalCommunity.DLL\bin\Debug\MedicalCommunity.DLL.pdb
+D:\MedicalCommunityApp\MedicalCommunity.DLL\bin\Debug\MedicalCommunity.DAO.dll
+D:\MedicalCommunityApp\MedicalCommunity.DLL\bin\Debug\MedicalCommunity.DAO.pdb
+D:\MedicalCommunityApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DAL.csprojResolveAssemblyReference.cache
+D:\MedicalCommunityApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DLL.dll
+D:\MedicalCommunityApp\MedicalCommunity.DLL\obj\Debug\MedicalCommunity.DLL.pdb

@@ -9,3 +9,17 @@ F:\hyder\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunity.DLL.pdb
 F:\hyder\MedicalCommunityApp\MedicalCommunityWedApp\obj\Debug\MedicalCommunityWebApp.csprojResolveAssemblyReference.cache
 F:\hyder\MedicalCommunityApp\MedicalCommunityWedApp\obj\Debug\MedicalCommunityWedApp.dll
 F:\hyder\MedicalCommunityApp\MedicalCommunityWedApp\obj\Debug\MedicalCommunityWedApp.pdb
+D:\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunityWedApp.dll.config
+D:\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunityWedApp.dll
+D:\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunityWedApp.pdb
+D:\MedicalCommunityApp\MedicalCommunityWedApp\bin\itextsharp.dll
+D:\MedicalCommunityApp\MedicalCommunityWedApp\bin\itextsharp.pdfa.dll
+D:\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunity.BLL.dll
+D:\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunity.DAO.dll
+D:\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunity.DLL.dll
+D:\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunity.BLL.pdb
+D:\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunity.DAO.pdb
+D:\MedicalCommunityApp\MedicalCommunityWedApp\bin\MedicalCommunity.DLL.pdb
+D:\MedicalCommunityApp\MedicalCommunityWedApp\obj\Debug\MedicalCommunityWebApp.csprojResolveAssemblyReference.cache
+D:\MedicalCommunityApp\MedicalCommunityWedApp\obj\Debug\MedicalCommunityWedApp.dll
+D:\MedicalCommunityApp\MedicalCommunityWedApp\obj\Debug\MedicalCommunityWedApp.pdb

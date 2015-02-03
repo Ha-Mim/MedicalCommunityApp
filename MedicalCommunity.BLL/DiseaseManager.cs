@@ -25,7 +25,7 @@ namespace MedicalCommunityAutomation.BLL
             return aDiseaseDbGateway.GetAll();
         }
 
-        public int Find(string name)
+        public Disease Find(string name)
         {
             return aDiseaseDbGateway.Find(name);
         }

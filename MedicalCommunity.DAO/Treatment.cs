@@ -17,5 +17,6 @@ namespace MedicalCommunity.DAO
         public string Note { set; get; }
         public DateTime Date { set; get; }
         public int PatientId { set; get; }
+        public int CenterId { set; get; }
     }
 }

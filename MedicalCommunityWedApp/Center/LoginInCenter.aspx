@@ -13,7 +13,7 @@
         <h1>Center Login</h1>
         <p style="text-align: center">
             Center Code
-            <asp:TextBox ID="centerCodeTextBox" runat="server"></asp:TextBox>
+            <asp:TextBox ID="centerCodeTextBox" runat="server" OnTextChanged="centerCodeTextBox_TextChanged"></asp:TextBox>
         </p>
         <p style="text-align: center">
             Password

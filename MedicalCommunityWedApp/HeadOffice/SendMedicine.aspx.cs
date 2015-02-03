@@ -49,7 +49,7 @@ namespace CommunityMedicine.UI
 
         protected void thanaDropDownList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            centerDropDownList.Items.Clear();
+           
             int id = Convert.ToInt32(thanaDropDownList.SelectedValue);
             List<Center> aCenterList = aCenterManager.GetAllCenterByThanaId(id);
             centerDropDownList.DataSource = aCenterList;

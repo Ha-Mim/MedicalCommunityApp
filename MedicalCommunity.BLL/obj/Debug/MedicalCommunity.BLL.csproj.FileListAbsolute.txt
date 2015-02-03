@@ -43,3 +43,12 @@ F:\hyder\MedicalCommunityApp\MedicalCommunity.BLL\bin\Debug\MedicalCommunity.DLL
 F:\hyder\MedicalCommunityApp\MedicalCommunity.BLL\obj\Debug\MedicalCommunity.BLL.csprojResolveAssemblyReference.cache
 F:\hyder\MedicalCommunityApp\MedicalCommunity.BLL\obj\Debug\MedicalCommunity.BLL.dll
 F:\hyder\MedicalCommunityApp\MedicalCommunity.BLL\obj\Debug\MedicalCommunity.BLL.pdb
+D:\MedicalCommunityApp\MedicalCommunity.BLL\bin\Debug\MedicalCommunity.BLL.dll
+D:\MedicalCommunityApp\MedicalCommunity.BLL\bin\Debug\MedicalCommunity.BLL.pdb
+D:\MedicalCommunityApp\MedicalCommunity.BLL\bin\Debug\MedicalCommunity.DAO.dll
+D:\MedicalCommunityApp\MedicalCommunity.BLL\bin\Debug\MedicalCommunity.DLL.dll
+D:\MedicalCommunityApp\MedicalCommunity.BLL\bin\Debug\MedicalCommunity.DAO.pdb
+D:\MedicalCommunityApp\MedicalCommunity.BLL\bin\Debug\MedicalCommunity.DLL.pdb
+D:\MedicalCommunityApp\MedicalCommunity.BLL\obj\Debug\MedicalCommunity.BLL.csprojResolveAssemblyReference.cache
+D:\MedicalCommunityApp\MedicalCommunity.BLL\obj\Debug\MedicalCommunity.BLL.dll
+D:\MedicalCommunityApp\MedicalCommunity.BLL\obj\Debug\MedicalCommunity.BLL.pdb

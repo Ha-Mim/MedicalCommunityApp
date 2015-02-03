@@ -47,5 +47,14 @@ namespace MedicalCommunityAutomation.DAL
            ASqlCommand.ExecuteNonQuery();
            ASqlConnection.Close();
        }
+
+       public void Update(int centerId, int medicineId, int quantity)
+       {
+           string query = "Update tbl_stock Set quantity='" + quantity + "' where centerid='" + centerId + "' AND medicineId='" + medicineId + "'";
+           ASqlConnection.Open();
+           ASqlCommand = new SqlCommand(query, ASqlConnection);
+           ASqlCommand.ExecuteNonQuery();
+           ASqlConnection.Close();
+       }
     }
 }

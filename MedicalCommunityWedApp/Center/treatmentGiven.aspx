@@ -53,7 +53,7 @@
        
          <br/>  
         <asp:Label ID="Label2" runat="server" Text="Quantity Given"></asp:Label>
-        <asp:TextBox ng-model="quantity" ID="quantitygivenTextBox" runat="server" ClientIDMode="Static"></asp:TextBox>
+        <asp:TextBox ng-model="quantity" ID="quantitygivenTextBox" runat="server" ></asp:TextBox>
         <br/>
         <asp:Label ID="Label8" runat="server" Text="Note"></asp:Label>
         <asp:TextBox ng-model="note" ID="noteTextBox" runat="server"></asp:TextBox>

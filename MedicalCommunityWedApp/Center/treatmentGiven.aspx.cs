@@ -26,9 +26,10 @@ namespace MedicalCommunityWedApp.Center
         PatientManager aPatientManager=new PatientManager();
         protected void Page_Load(object sender, EventArgs e)
         {
-            int centerId = Convert.ToInt32(Session["id"]);
+            
             if (!IsPostBack)
             {
+                int centerId = Convert.ToInt32(Session["id"]);
                 doctorDropDownList.DataSource = aDoctorManager.GetAll(centerId);
                 doctorDropDownList.DataTextField = "Name";
                 doctorDropDownList.DataValueField = "Id";
@@ -97,11 +98,12 @@ namespace MedicalCommunityWedApp.Center
 
             var doseList = doseName.Value;
             doseName.Value = "";
-            string[] dose = diseaseList.Split(',');
+            string[] dose = doseList.Split(',');
 
             var timeOfMealList = timeOfMealName.Value;
             timeOfMealName.Value = "";
             string[] timeOfMeal = timeOfMealList.Split(',');
+
             var quantityList = quantityName.Value;
             quantityName.Value = "";
             string[] quantityValue = quantityList.Split(',');
@@ -111,17 +113,18 @@ namespace MedicalCommunityWedApp.Center
             noteName.Value = "";
             string[] note = noteList.Split(',');
 
-            for (int i = 0; i < medicine.Length  ; i++)
+            for (int i = 0; i < disease.Length-1  ; i++)
             {
                 Treatment aTreatment = new Treatment();
                 string name = nameTextBox.Text;
                 aTreatment.PatientId = aPatientManager.Search(name).Id;
-                aTreatment.DiseaseId = aDiseaseManager.Find(disease[i]);
+                aTreatment.DiseaseId = aDiseaseManager.Find(disease[i]).Id;
                 aTreatment.DoseId = aDoseManager.Find(dose[i]).Id;
                 aTreatment.MedicineId = aMedicineManager.Find(medicine[i]).Id;
                 aTreatment.Note = note[i];
                 aTreatment.Date = dateCalendar.SelectedDate;
                 aTreatment.Quantity = Convert.ToInt32(quantityValue[i]);
+                aTreatment.CenterId = Convert.ToInt32(Session["id"]);
                 if (timeOfMealRadioButtonList.Text == "Before Meal")
                 {
                     aTreatment.TimeOfMeal = true;

@@ -28,5 +28,10 @@ namespace MedicalCommunityAutomation
                 msgLabel.Text = "Incorrect center code or password!";
             }
         }
+
+        protected void centerCodeTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

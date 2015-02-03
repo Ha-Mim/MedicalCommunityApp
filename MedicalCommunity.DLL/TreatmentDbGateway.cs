@@ -14,7 +14,7 @@ namespace MedicalCommunity.DLL
     {
        public void Save(Treatment aTreatment)
        {
-           string query = "INSERT INTO tbl_treatment VALUES('" + aTreatment.DiseaseId + "' , '" + aTreatment.MedicineId + "','" + aTreatment.DoseId + "','" + aTreatment.TimeOfMeal + "',"+aTreatment.Quantity+",'"+aTreatment.Note+"','"+aTreatment.Date+"','"+aTreatment.PatientId+"')";
+           string query = "INSERT INTO tbl_treatment VALUES('" + aTreatment.DiseaseId + "' , '" + aTreatment.MedicineId + "','" + aTreatment.DoseId + "','" + aTreatment.TimeOfMeal + "','"+aTreatment.Quantity+"','"+aTreatment.Note+"','"+aTreatment.Date+"','"+aTreatment.PatientId+"')";
            ASqlConnection.Open();
            ASqlCommand = new SqlCommand(query, ASqlConnection);
            ASqlCommand.ExecuteNonQuery();

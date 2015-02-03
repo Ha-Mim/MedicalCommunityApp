@@ -41,7 +41,7 @@ namespace MedicalCommunity.DLL
             return diseaseList;
         }
 
-        public int Find(string name)
+        public Disease Find(string name)
         {
             
             string query = "SELECT *FROM tbl_disease where name='"+name+"';";
@@ -61,7 +61,7 @@ namespace MedicalCommunity.DLL
             }
             ASqlDataReader.Close();
             ASqlConnection.Close();
-            return aDisease.Id;
+            return aDisease;
         }
         public Disease Find(int id)
         {

@@ -23,3 +23,7 @@ F:\hyder\MedicalCommunityApp\MedicalCommunity.DAO\bin\Debug\MedicalCommunity.DAO
 F:\hyder\MedicalCommunityApp\MedicalCommunity.DAO\obj\Debug\MedicalCommunity.DAO.csprojResolveAssemblyReference.cache
 F:\hyder\MedicalCommunityApp\MedicalCommunity.DAO\obj\Debug\MedicalCommunity.DAO.dll
 F:\hyder\MedicalCommunityApp\MedicalCommunity.DAO\obj\Debug\MedicalCommunity.DAO.pdb
+D:\MedicalCommunityApp\MedicalCommunity.DAO\bin\Debug\MedicalCommunity.DAO.dll
+D:\MedicalCommunityApp\MedicalCommunity.DAO\bin\Debug\MedicalCommunity.DAO.pdb
+D:\MedicalCommunityApp\MedicalCommunity.DAO\obj\Debug\MedicalCommunity.DAO.dll
+D:\MedicalCommunityApp\MedicalCommunity.DAO\obj\Debug\MedicalCommunity.DAO.pdb
